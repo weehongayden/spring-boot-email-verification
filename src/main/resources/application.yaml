@@ -13,8 +13,8 @@ spring:
       email: noreply@mailgun.com
     host: smtp.mailgun.org
     port: 587
-    username: postmaster@sandbox6394bcedd8054a7fbefb8ee87f6639e0.mailgun.org
-    password: c0ac294c7a2f0648967be97ea9d8e12a-6b161b0a-d36f1a92
+    username:
+    password:
     protocol: smtp
     test-connection: true
     default-encoding: UTF-8

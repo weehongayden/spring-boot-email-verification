@@ -1,0 +1,30 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  datasource:
+    url: ${db-url:jdbc:postgresql://localhost:5432/finance-db}
+    username: ${db-user:ayden}
+    password: ${db-pass:password}
+    driver-class-name: org.postgresql.Driver
+  mail:
+    from:
+      email: noreply@mailgun.com
+    host: smtp.mailgun.org
+    port: 587
+    username: postmaster@sandbox6394bcedd8054a7fbefb8ee87f6639e0.mailgun.org
+    password: c0ac294c7a2f0648967be97ea9d8e12a-6b161b0a-d36f1a92
+    protocol: smtp
+    test-connection: true
+    default-encoding: UTF-8
+    smtp:
+      auth: true
+      starttls:
+        enable: true
+  thymeleaf:
+    prefix: classpath:/templates/api/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    cache: false
